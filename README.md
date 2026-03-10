@@ -1,22 +1,21 @@
-# Visualisasi Data Tips Restoran dengan Python
+# Visualisasi Data Menggunakan Python
 
 ## Deskripsi Project
 
-Project ini merupakan tugas visualisasi data menggunakan Python.
-Dataset yang digunakan adalah **tips.csv** yang berisi informasi mengenai pelanggan restoran, total tagihan, serta jumlah tips yang diberikan.
+Project ini merupakan tugas eksplorasi dan visualisasi data menggunakan Python.
+Pada project ini dilakukan analisis sederhana terhadap dua dataset berbeda untuk mendapatkan insight dari data yang tersedia.
 
-Visualisasi dilakukan untuk melihat **persentase pelanggan laki-laki dan perempuan yang memberikan tips**.
-
-Library yang digunakan dalam project ini adalah:
-
-* pandas → untuk membaca dan mengolah data
-* matplotlib → untuk membuat visualisasi grafik
+Visualisasi dilakukan menggunakan library Python yaitu **pandas** untuk pengolahan data dan **matplotlib** untuk membuat grafik.
 
 ---
 
-## Dataset
+# Dataset 1: Tips Restoran
 
-Dataset yang digunakan adalah **tips.csv** yang berisi beberapa atribut seperti:
+## Deskripsi Dataset
+
+Dataset pertama adalah **tips.csv** yang berisi informasi mengenai pelanggan restoran dan tips yang diberikan.
+
+Beberapa atribut dalam dataset ini antara lain:
 
 * total_bill → total tagihan pelanggan
 * tip → jumlah tips yang diberikan
@@ -26,20 +25,51 @@ Dataset yang digunakan adalah **tips.csv** yang berisi beberapa atribut seperti:
 * time → waktu kunjungan
 * size → jumlah orang dalam kelompok
 
+## Visualisasi Data
+
+Visualisasi dilakukan untuk melihat **persentase pelanggan berdasarkan jenis kelamin yang memberikan tips**.
+
+### Grafik
+
+![Visualisasi Tips](chart.png)
+
+## Insight
+
+Berdasarkan grafik yang dihasilkan, terlihat bahwa pelanggan laki-laki memberikan tips lebih banyak dibandingkan pelanggan perempuan pada dataset tersebut.
+
 ---
+
+# Dataset 2: Spotify Music Dataset
+
+## Sumber Dataset
+
+Dataset kedua berasal dari platform data science **Kaggle** dan berisi berbagai fitur lagu dari Spotify seperti genre, popularity, danceability, dan energy.
+
+Dataset yang digunakan:
+
+```
+SpotifyFeatures.csv
+```
 
 ## Visualisasi Data
 
-Visualisasi yang dibuat adalah **Pie Chart** yang menunjukkan persentase pelanggan berdasarkan jenis kelamin yang memberikan tips.
+Visualisasi dilakukan untuk melihat **genre lagu yang paling banyak muncul dalam dataset Spotify**.
 
-Analisis sederhana dari visualisasi:
+### Grafik
 
-* Sebagian besar pelanggan yang memberikan tips adalah **laki-laki**
-* Persentase pelanggan laki-laki lebih tinggi dibandingkan pelanggan perempuan
+![Visualisasi Spotify](spoti.png)
+
+## Insight
+
+Berdasarkan grafik yang dihasilkan, terlihat bahwa beberapa genre memiliki jumlah lagu yang jauh lebih banyak dibandingkan genre lainnya dalam dataset Spotify.
+
+Hal ini menunjukkan bahwa genre tersebut lebih dominan dalam dataset yang digunakan.
 
 ---
 
-## Teknologi yang Digunakan
+# Teknologi yang Digunakan
+
+Project ini menggunakan beberapa tools dan library berikut:
 
 * Python
 * pandas
@@ -48,7 +78,7 @@ Analisis sederhana dari visualisasi:
 
 ---
 
-## Cara Menjalankan Program
+# Cara Menjalankan Program
 
 1. Install library yang dibutuhkan
 
@@ -57,28 +87,27 @@ pip install pandas
 pip install matplotlib
 ```
 
-2. Jalankan file Python
+2. Jalankan program visualisasi
+
+Visualisasi dataset tips:
 
 ```
-python visualisasi.py
+python visualisasi_tips.py
 ```
 
-3. Program akan menampilkan grafik visualisasi data.
+Visualisasi dataset Spotify:
+
+```
+python visualisasi_spotify.py
+```
 
 ---
 
-## Hasil Visualisasi
+# Kesimpulan
 
-![Grafik Visualisasi](chart.png)
+Melalui visualisasi data menggunakan Python, kita dapat memperoleh insight sederhana dari dataset yang digunakan.
 
----
+Pada dataset tips restoran, visualisasi menunjukkan perbedaan kontribusi tips berdasarkan gender pelanggan.
+Sedangkan pada dataset Spotify, visualisasi menunjukkan distribusi genre lagu yang paling banyak muncul dalam dataset.
 
-## Kesimpulan
-
-Berdasarkan visualisasi data yang dilakukan, dapat disimpulkan bahwa pelanggan laki-laki memberikan kontribusi tips yang lebih besar dibandingkan pelanggan perempuan pada dataset yang digunakan.
-
----
-
-## Author
-
-Tugas Visualisasi Data Python oleh Nazwa Nabilla Wijaya-1237050116
+Project ini menunjukkan bagaimana visualisasi data dapat membantu memahami pola dalam dataset dengan lebih mudah.
