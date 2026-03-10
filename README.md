@@ -81,4 +81,4 @@ Berdasarkan visualisasi data yang dilakukan, dapat disimpulkan bahwa pelanggan l
 
 ## Author
 
-Tugas Visualisasi Data Python
+Tugas Visualisasi Data Python oleh Nazwa Nabilla Wijaya-1237050116
